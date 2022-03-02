@@ -1,1 +1,4 @@
-//Empty file for Major 1
+#include <stdio.h>
+#include <stdbool.h>
+void countZeros();
+unsigned int GetValidNumber();
