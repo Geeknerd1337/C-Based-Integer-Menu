@@ -1,10 +1,15 @@
 #include <stdio.h>
 #include <stdbool.h>
+#include "major1.h"
+
 int main() {
     bool running = true;
     
     //Initialize variable for our choice, make it a character for simplicities sake
     char choice;
+    //A variable for holding our initial integer unsigned integer input
+    //Josh Wilson 3-2-22 TODO: Use %u in scanf for this
+    unsigned int number;
 
     while(running){
         //Initial Introduction
