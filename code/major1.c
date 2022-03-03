@@ -17,6 +17,25 @@ unsigned int GetValidNumber(){
     }
 }
 
+//This is really dirty and could be condensed down to one method but I'm doing this alone and I'm really tired
+//So this is what we get
+//Josh Wilson 3-2-22
+unsigned int GetValidRotation(){
+    //This is bizarre, but take in the input as a long long as it can have numbers outside our boundry, making it way easier to check
+    long long input; 
+
+    //Contiously check to see if the input is valid
+    while(true){
+        //Get the input from the user
+        printf("Enter the number of positions to rotate-right the input (between 0 and 31, inclusively):");
+        scanf(" %Ld",&input);
+        if(input >= 0 && input <= 31){
+            unsigned int output = (unsigned int)input;
+            return output;
+        }
+    }
+}
+
 
 int main() {
     bool running = true;
@@ -35,6 +54,12 @@ int main() {
         switch(choice){
             case '1':
                 countZeros();
+            break;
+            case '2':
+                endianSwap();
+            break;
+            case '3':
+                rotateRight();
             break;
             case '5':
                 printf("\n Program Terminating... goodbye...\n");
