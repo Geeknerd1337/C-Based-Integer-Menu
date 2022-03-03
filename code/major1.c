@@ -62,7 +62,7 @@ int main() {
                 rotateRight();
             break;
             case '5':
-                printf("\n Program Terminating... goodbye...\n");
+                printf("\nError: Invalid option. Please try again.\n");
                 return 0;
             break;
             default:
